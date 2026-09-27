@@ -19,6 +19,8 @@
     }
   },
   "description": "A draggable $ pill showing the live estimated API cost of the current chat, in the DeepSeek Harness web shell.",
+  "repository": { "type": "git", "url": "git+https://github.com/samorachumbi/dsh-cost-bubble.git" },
+  "homepage": "https://github.com/samorachumbi/dsh-cost-bubble#readme",
   "license": "MIT",
   "author": "Samora Chumbi",
   "keywords": [

@@ -100,6 +100,21 @@ Each of these cost a crash or a silent failure while building this.
 - **Persistent plugins do not get the dynamic sandbox builtins** (`harness`, `host.call`, `React`,
   `styles`) — those exist only for `cordis_define` packages.
 
+## Work with me
+
+I build and audit **DeepSeek Harness plugins** — including the client half, which is the part this
+pill demonstrates: a real UI mounted into the shell, served by the plugin's own host half.
+
+- **Plugin build** — host routes plus a client UI, installed safely, with rollback
+- **Plugin audit** — verdict first, `file:line` findings against a pinned commit
+- **Profile rescue** — the `reading 'prepare'` crash, recovered and documented
+
+Available for work — **open an issue on this repository**, or reach me through
+[my GitHub profile](https://github.com/samorachumbi).
+
+Other work of mine: [`dsh-daily-progress-tab`](https://github.com/samorachumbi/dsh-daily-progress-tab) (a
+planner in its own tab) and [the install guide](https://github.com/samorachumbi/dsh-plugin-install-guide).
+
 ## Licence
 
 MIT (c) 2026 Samora Chumbi. See `LICENSE`.
