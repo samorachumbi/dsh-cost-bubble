@@ -5,7 +5,21 @@ cost of the current chat**. Click it to expand the breakdown.
 
 Built for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) `0.1.1-rc.2`.
 
-> **Screenshot:** not committed yet — see *Status* below.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/pill-dark.png">
+  <img src="docs/pill-light.png" width="880" alt="The cost pill in the DeepSeek Harness shell, reading $0.0018 for the session on screen">
+</picture>
+
+Clicking it opens the breakdown — the billed token buckets, the resolved model, and the fee band:
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/panel-dark.png">
+  <img src="docs/panel-light.png" width="880" alt="Expanded panel: model deepseek-v4-flash-vision-exp, input (miss) 7,575, cache hit 0, cache write 0, output 246, estimated $0.0018">
+</picture>
+
+Both are a real session, not a mock: one genuine one-shot agent run, which the pill priced at
+**$0.0018** — 7,575 uncached input tokens and 246 output tokens at `deepseek-v4-flash` rates. The
+shell's own footer independently reports the same totals (`Input 7.6K tok · Output 246 tok`).
 
 ## What it shows
 
@@ -39,7 +53,7 @@ package manager inside a profile (see below), so the built output is the deliver
 **Do not run `pnpm`/`npm` inside `~/.dsh/profiles/*`.** Doing so materialises a second copy of
 `@deepseek-ai/dsh-*`; two copies means two `Symbol` instances and every tool call dies with
 `Cannot read properties of undefined (reading 'prepare')`. See
-[the split-Symbol write-up](https://github.com/) *(link to be added)*.
+[the split-Symbol write-up](https://github.com/samorachumbi/dsh-plugin-install-guide).
 
 Copy the files and register the plugin through the profile's patch layer:
 
@@ -92,5 +106,6 @@ MIT (c) 2026 Samora Chumbi. See `LICENSE`.
 
 ## Status
 
-Working and in daily use on the author's machine since 2026-09-17. Screenshot and the
-split-Symbol write-up link are the remaining items before this repository is published.
+Working and in daily use on the author's machine since 2026-09-17. The screenshots above are
+captured from a real session, not staged. The split-Symbol write-up link is the remaining item
+before this repository is published.
