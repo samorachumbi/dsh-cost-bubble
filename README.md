@@ -1,5 +1,10 @@
 # dsh-cost-bubble
 
+> **Need this built, fixed or adapted for your team?** Email
+> **[samora@itikia.co.ke](mailto:samora@itikia.co.ke)** — paid work, a project that does not exist yet, or a
+> question you would rather not post publicly. Answered within one business day, and a call is fine if you
+> would rather talk. Not a developer? There is no wrong door: write in your own words, no jargon needed.
+
 A draggable **$ pill** that floats in the DeepSeek Harness web shell and shows the **live estimated
 cost of the current chat**. Click it to expand the breakdown.
 
